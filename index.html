@@ -1,0 +1,332 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Panitia MPLS 2026 — SMKN 2 PURBALINGGA</title>
+<meta name="description" content="Biodata panitia MPLS 2026 beserta tautan Instagram sekolah, OSIS, dan panitia." />
+
+<!-- ============================================================
+  CATATAN KEAMANAN (baca README.md untuk penjelasan lengkap):
+  Meta tag di bawah ini adalah header keamanan tingkat-browser
+  (mencegah XSS, clickjacking, dll). Ini BUKAN proteksi anti-DDoS.
+  Proteksi DDoS sungguhan harus diatur di level hosting/CDN —
+  lihat README.md bagian "Proteksi DDoS".
+============================================================ -->
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; script-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'none';">
+<meta http-equiv="X-Content-Type-Options" content="nosniff">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Space+Mono:wght@400;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+  :root{
+    --navy: #16213E;
+    --navy-deep: #0D1326;
+    --cream: #FAF7F0;
+    --ink: #1B1B1F;
+    --gold: #F2B134;
+    --coral: #E94B3C;
+    --teal: #2E8B8B;
+    --steel: #5C6B8A;
+    --plum: #8E5572;
+    --forest: #4F6F52;
+    --burnt: #D98324;
+    --line: rgba(22,33,62,0.12);
+  }
+
+  *{ box-sizing:border-box; }
+  html{ scroll-behavior:smooth; }
+  body{
+    margin:0;
+    background:var(--cream);
+    color:var(--ink);
+    font-family:'Inter',system-ui,sans-serif;
+    -webkit-font-smoothing:antialiased;
+    overflow-x:hidden; /* jaring pengaman terakhir agar tidak ada scroll-x di HP manapun */
+  }
+  h1,h2,h3,.font-display{ font-family:'Space Grotesk',system-ui,sans-serif; }
+  .mono{ font-family:'Space Mono',monospace; }
+
+  a{ color:inherit; }
+  :focus-visible{ outline:3px solid var(--gold); outline-offset:2px; border-radius:4px; }
+
+  /* ---------- HERO ---------- */
+  .hero{
+    position:relative;
+    background:
+      radial-gradient(circle at 85% -10%, rgba(242,177,52,0.18), transparent 55%),
+      linear-gradient(160deg, var(--navy) 0%, var(--navy-deep) 100%);
+    color:var(--cream);
+    padding:64px 24px 80px;
+    overflow:hidden;
+  }
+  .hero-inner{ max-width:980px; margin:0 auto; position:relative; z-index:2; }
+  .eyebrow{
+    font-family:'Space Mono',monospace;
+    letter-spacing:.12em;
+    text-transform:uppercase;
+    font-size:.75rem;
+    color:var(--gold);
+    display:inline-flex;
+    align-items:center;
+    gap:8px;
+    margin-bottom:18px;
+  }
+  .eyebrow::before{ content:""; width:8px; height:8px; border-radius:50%; background:var(--gold); display:inline-block; }
+  .hero h1{
+    font-size:clamp(2.4rem, 6vw, 4.2rem);
+    line-height:.98;
+    margin:0 0 14px;
+    font-weight:700;
+    letter-spacing:-.01em;
+  }
+  .hero h1 span{ color:var(--gold); }
+  .school-name{
+    font-size:clamp(1.05rem, 2.4vw, 1.35rem);
+    margin:0 0 8px;
+    font-weight:600;
+  }
+  .hero p.tagline{
+    max-width:560px;
+    color:rgba(250,247,240,0.72);
+    font-size:1.02rem;
+    line-height:1.55;
+    margin:0 0 36px;
+  }
+  .ig-row{ display:flex; flex-wrap:wrap; gap:12px; }
+  .ig-pill{
+    display:inline-flex;
+    align-items:center;
+    gap:10px;
+    padding:11px 18px 11px 14px;
+    background:rgba(250,247,240,0.06);
+    border:1px solid rgba(250,247,240,0.22);
+    border-radius:999px;
+    text-decoration:none;
+    color:var(--cream);
+    font-size:.92rem;
+    font-weight:500;
+    transition:transform .18s ease, background .18s ease, border-color .18s ease;
+  }
+  .ig-pill:hover{ background:rgba(242,177,52,0.14); border-color:var(--gold); transform:translateY(-2px); }
+  .ig-pill .ig-icon{ width:18px; height:18px; flex:none; }
+  .ig-pill .label{ color:rgba(250,247,240,0.55); font-size:.74rem; display:block; font-family:'Space Mono',monospace; letter-spacing:.04em; }
+  .ig-pill .handle{ display:block; }
+
+  /* perforated "ticket" edge between hero and content */
+  .hero::after{
+    content:"";
+    position:absolute; left:0; right:0; bottom:-1px; height:26px;
+    background-image: radial-gradient(circle at 13px 13px, var(--cream) 11px, transparent 11.5px);
+    background-size:26px 26px;
+    background-repeat:repeat-x;
+    z-index:1;
+  }
+
+  /* ---------- STATS ---------- */
+  .stats{ max-width:980px; margin:34px auto 0; padding:0 24px; display:flex; gap:28px; flex-wrap:wrap; }
+  .stat-num{ font-family:'Space Grotesk',sans-serif; font-size:2rem; font-weight:700; color:var(--gold); }
+  .stat-label{ font-size:.78rem; color:rgba(250,247,240,0.6); text-transform:uppercase; letter-spacing:.08em; }
+
+  /* ---------- TOOLBAR ---------- */
+  .toolbar{
+    max-width:1100px; margin:48px auto 0; padding:0 24px;
+    display:flex; flex-wrap:wrap; gap:14px; align-items:center; justify-content:space-between;
+  }
+  .search-wrap{ position:relative; flex:1 1 260px; max-width:360px; }
+  .search-wrap input{
+    width:100%; padding:12px 16px 12px 40px; border-radius:10px;
+    border:1.5px solid var(--line); background:#fff; font-size:.95rem; color:var(--ink);
+    font-family:'Inter',sans-serif;
+  }
+  .search-wrap input:focus{ outline:none; border-color:var(--navy); box-shadow:0 0 0 3px rgba(22,33,62,0.1); }
+  .search-wrap svg{ position:absolute; left:13px; top:50%; transform:translateY(-50%); width:16px; height:16px; opacity:.5; }
+  .chips{ display:flex; gap:8px; flex-wrap:wrap; }
+  .chip{
+    font-family:'Space Mono',monospace; font-size:.76rem; letter-spacing:.02em;
+    padding:8px 14px; border-radius:999px; border:1.5px solid var(--line);
+    background:#fff; cursor:pointer; color:var(--ink); transition:.15s ease;
+  }
+  .chip[aria-pressed="true"]{ background:var(--navy); border-color:var(--navy); color:var(--cream); }
+  .chip:hover{ border-color:var(--navy); }
+
+  /* ---------- GRID ---------- */
+  .grid-wrap{ max-width:1100px; margin:0 auto; padding:36px 24px 90px; }
+  #grid{
+    display:grid; gap:26px;
+    grid-template-columns:repeat(auto-fill, minmax(min(248px, 100%), 1fr));
+  }
+  .empty-state{ text-align:center; padding:60px 20px; color:var(--steel); font-family:'Space Mono',monospace; font-size:.9rem; }
+
+  /* ---------- STAFF SECTION (Guru & Karyawan) ---------- */
+  .staff-section{
+    max-width:1100px; margin:0 auto; padding:10px 24px 90px;
+    border-top:1px dashed var(--line);
+  }
+  .section-head{ text-align:center; max-width:560px; margin:40px auto 32px; }
+  .eyebrow-dark{ color:var(--navy); }
+  .eyebrow-dark::before{ background:var(--navy); }
+  .section-head h2{ font-size:clamp(1.5rem, 3vw, 2.1rem); margin:6px 0 8px; }
+  .section-head p{ color:var(--steel); font-size:.95rem; margin:0; }
+  .legend{ display:flex; gap:18px; justify-content:center; margin-top:16px; font-family:'Space Mono',monospace; font-size:.78rem; color:var(--steel); }
+  .legend-item{ display:inline-flex; align-items:center; gap:7px; }
+  .dot{ width:9px; height:9px; border-radius:50%; display:inline-block; }
+  .staff-grid{
+    display:grid; gap:24px;
+    grid-template-columns:repeat(auto-fill, minmax(min(210px, 100%), 1fr));
+  }
+  .staff-card .meta-row{ margin-bottom:0; }
+  .kategori-tag{
+    font-family:'Space Mono',monospace; font-size:.68rem; padding:4px 12px; border-radius:999px;
+    color:#fff; letter-spacing:.02em; margin:0 auto;
+  }
+
+  /* ---------- CARD (ID badge / lanyard) ---------- */
+  .card{
+    position:relative;
+    background:#fff;
+    border-radius:18px;
+    padding:34px 20px 22px;
+    border:1px solid var(--line);
+    box-shadow:0 1px 2px rgba(22,33,62,0.04);
+    transition:transform .22s ease, box-shadow .22s ease;
+  }
+  @media (prefers-reduced-motion: no-preference){
+    .card:hover{ transform:translateY(-4px) rotate(-0.6deg); box-shadow:0 14px 28px rgba(22,33,62,0.14); }
+  }
+  /* lanyard clip */
+  .card::before{
+    content:""; position:absolute; top:-9px; left:50%; transform:translateX(-50%);
+    width:46px; height:16px; border-radius:6px; background:var(--gold);
+  }
+  .hole{
+    width:13px; height:13px; border-radius:50%; margin:0 auto 14px;
+    background:var(--cream); box-shadow:inset 0 1.5px 3px rgba(0,0,0,0.25);
+  }
+  .badge-id{
+    position:absolute; top:14px; right:16px; font-family:'Space Mono',monospace;
+    font-size:.68rem; color:var(--steel); letter-spacing:.03em;
+  }
+  .avatar{
+    width:76px; height:76px; border-radius:50%; margin:0 auto 14px;
+    overflow:hidden; background:#EFEAE0; border:1px solid var(--line);
+  }
+  .avatar svg{ display:block; }
+  .avatar img{ width:100%; height:100%; object-fit:cover; display:block; }
+  .nama{ text-align:center; font-weight:700; font-size:1.05rem; margin:0 0 3px; }
+  .jabatan{ text-align:center; font-size:.82rem; color:var(--steel); margin:0 0 14px; line-height:1.4; min-height:34px; }
+  .meta-row{ display:flex; align-items:center; justify-content:center; gap:8px; margin-bottom:16px; flex-wrap:wrap; }
+  .divisi-tag{
+    font-family:'Space Mono',monospace; font-size:.68rem; padding:4px 10px; border-radius:999px;
+    color:#fff; letter-spacing:.02em;
+  }
+  .kelas-tag{
+    font-family:'Space Mono',monospace; font-size:.68rem; padding:4px 10px; border-radius:999px;
+    background:var(--cream); color:var(--ink); border:1px solid var(--line);
+  }
+  .card hr{ border:none; border-top:1px dashed var(--line); margin:0 0 14px; }
+  .ig-link{
+    display:flex; align-items:center; justify-content:center; gap:8px;
+    padding:9px; border-radius:10px; background:var(--cream);
+    text-decoration:none; font-size:.85rem; font-weight:600; color:var(--ink);
+    transition:background .15s ease;
+  }
+  .ig-link:hover{ background:#F0E9D8; }
+  .ig-link svg{ width:16px; height:16px; }
+
+  /* ---------- FOOTER ---------- */
+  footer{
+    text-align:center; padding:30px 24px 46px; color:var(--steel);
+    font-family:'Space Mono',monospace; font-size:.78rem; line-height:1.7;
+  }
+  footer a{ color:var(--navy); text-decoration:underline; }
+
+  /* ---------- PENYESUAIAN HP (semua ukuran) ---------- */
+  @media (max-width: 600px){
+    .hero{ padding:48px 16px 64px; }
+    .stats{ padding:0 16px; gap:22px; }
+    .toolbar{ padding:0 16px; }
+    .grid-wrap{ padding:28px 16px 64px; }
+    .staff-section{ padding:10px 16px 64px; }
+    #grid, .staff-grid{ gap:18px; }
+    .ig-pill{ flex:1 1 auto; justify-content:center; }
+    .ig-row{ gap:10px; }
+  }
+  @media (max-width: 380px){
+    .hero h1{ font-size:2.1rem; }
+    .card{ padding:30px 14px 18px; }
+  }
+  /* target sentuh lebih besar di perangkat tanpa hover (HP/tablet) */
+  @media (hover: none){
+    .chip{ padding:10px 16px; }
+    .ig-link{ padding:11px; }
+    .ig-pill{ padding:13px 18px 13px 16px; }
+  }
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="hero-inner">
+    <span class="eyebrow">Masa Pengenalan Lingkungan Sekolah · 2026</span>
+    <p class="school-name">SMKN 2 PURBALINGGA</p>
+    <h1>Panitia <span>MPLS 2026</span></h1>
+    <p class="tagline">Kenali kakak panitia yang akan menemani dan membimbingmu selama masa orientasi tahun ini.</p>
+
+    <div class="ig-row" id="igRow"><!-- diisi oleh app.js dari objek SOCIAL --></div>
+  </div>
+
+  <div class="stats">
+    <div>
+      <div class="stat-num">21</div>
+      <div class="stat-label">Panitia</div>
+    </div>
+    <div>
+      <div class="stat-num">5</div>
+      <div class="stat-label">Jurusan</div>
+    </div>
+    <div>
+      <div class="stat-num">2026/2027</div>
+      <div class="stat-label">Tahun Ajaran</div>
+    </div>
+  </div>
+</header>
+
+<main>
+  <div class="toolbar">
+    <div class="search-wrap">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>
+      <input id="searchInput" type="text" placeholder="Cari nama atau kelas..." aria-label="Cari panitia berdasarkan nama atau kelas">
+    </div>
+    <div class="chips" id="chipRow" role="group" aria-label="Saring berdasarkan divisi"></div>
+  </div>
+
+  <div class="grid-wrap">
+    <div id="grid"></div>
+  </div>
+
+  <section class="staff-section">
+    <div class="section-head">
+      <span class="eyebrow eyebrow-dark">Tenaga Pendidik &amp; Kependidikan</span>
+      <h2>Guru &amp; Karyawan Pendamping</h2>
+      <p>Para guru dan karyawan yang mendampingi pelaksanaan MPLS 2026.</p>
+      <div class="legend">
+        <span class="legend-item"><span class="dot" style="background:var(--teal)"></span>Guru</span>
+        <span class="legend-item"><span class="dot" style="background:var(--burnt)"></span>Karyawan</span>
+      </div>
+    </div>
+    <div id="staffGrid" class="staff-grid"></div>
+  </section>
+</main>
+
+<footer>
+  MPLS 2026 — SMKN 2 PURBALINGGA<br>
+  Dibuat untuk keperluan pengenalan panitia. 
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>
